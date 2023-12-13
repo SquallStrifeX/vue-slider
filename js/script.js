@@ -58,6 +58,11 @@ createApp({
                 this.nextImg()
                 
             }, 3000 )
+        },
+        stopAutoplay(){
+            this.activeAutoplay = false,
+            clearInterval(this.autoplay)
+            this.autoplay = null;
         }
     }
   }).mount('#app');
