@@ -45,6 +45,10 @@ createApp({
             else{
                 this.activeImage--;
             }
+        },
+        showImg(index){
+            this.activeImage = index;
+
         }
     }
   }).mount('#app');
